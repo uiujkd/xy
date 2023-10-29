@@ -5,7 +5,7 @@ UUID='de04add5-5c88-6bab-950c-08cd5320df19'
 VMESS_WSPATH='/vmessalive'
 VLESS_WSPATH='/vlessalive'
 TROJAN_WSPATH='/trojanalive'
-SS_WSPATH='/shadowsocks'
+SS_WSPATH='/shadowsocksalive'
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" config.json
 sed -i "s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" /etc/nginx/nginx.conf
 sed -i "s#RELEASE_RANDOMNESS#${RELEASE_RANDOMNESS}#g" /etc/supervisor/conf.d/supervisord.conf
